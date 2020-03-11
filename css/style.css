@@ -1,0 +1,160 @@
+body{
+	overflow-x: hidden;
+	font-family: Questrial;
+	background-color: #f7f7f7;
+}
+
+#navbar{
+	padding: 10px 40px;
+	background-color: #4b339d;
+/*background-color: #3f3d56;*/
+	font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Signika Negative;
+}
+.nav-logo{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+
+.nav-link{
+	margin: 0 16px;
+}
+header{
+	color: #ffffff;
+	background-image: url("../images/himg2.jpg");
+	text-align: center;
+	font-family: Signika Negative;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+.header-bg{
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 10%;
+	height: 100vh;
+}
+.header-h2{
+	margin-top: 100px;
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+.header-h2::first-letter{
+	font-size: 80px;
+	font-family: verdena;
+}
+.header-p{
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+.header-span{
+	font-size: 15px;
+	font-family: cursive;
+	color: rgba(255,255,255,0.6);
+}
+
+.section1{
+	padding:80px 0;
+	margin-left: -40px; 
+	line-height: 30px;
+}
+.section1-flex{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+.safesecure-img{
+	width: 480px;
+	height:300px;
+}
+.section1-pquest-div{
+	margin-left: 15%;
+	margin-top: 60px;
+}
+.pquest-img{
+	width: 400px;
+	height:280px;
+	margin-left: 20px;
+}
+.advert-img{
+	width: 500px;
+	height:300px;
+}
+.section1-update-div{
+	margin-top: 40px;
+}
+
+footer{
+	padding: 30px 40px;
+	background-color: #332b4e;
+	color: white;
+	font-size: 95%;
+}
+.green{
+	color: #1fc71f;
+}
+.foot-pg-ul{
+	margin: 0;
+	padding: 10px 0;
+}
+.foot-pg-li{
+	display: inline;
+	margin-right: 5px;
+}
+.foot-pg-a{
+	color: white;
+}
+.foot-pg-a:hover{
+	color: #1fc71f;
+	text-decoration: none;
+}
+.foot-p{
+	padding: 30px 0;
+}
+.foot-center{
+	line-height: 30px;
+	vertical-align: middle;
+}
+.foot-div{
+	display: flex;
+}
+.fa-map-marker{
+	margin-top:  5px;
+}
+.foot-icons{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.foot-right-p{
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+ 
+@media (max-width: 992px) {
+	header, .header-bg{
+		height: 80vh;
+	}
+	footer{
+		text-align: center !important;
+	}
+	.foot-div{
+		display: block;
+	}
+	.foot-right-p{
+		width: 500px;
+		display: inline-block;
+	}
+	.section1-flex{
+		display: block;
+		text-align: center;
+	}
+	.section1-pquest-div{
+		margin: 0;
+	}
+	.section1-flex div{
+		margin-bottom: 50px;
+	}
+}
