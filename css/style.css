@@ -186,6 +186,7 @@ footer{
 	}
 	.section1{
 		margin: 0px;
+		padding-bottom: 0px;
 	}
 	.section1-flex{
 		display: block;
@@ -200,6 +201,12 @@ footer{
 	.advert-img, .safesecure-img, .pquest-img{
 		width: 300px;
 		height: 250px;
+	}
+	.section2{
+		padding-top: 0px;
+	}
+	.deptdue{
+		margin-top: 10px;
 	}
 	footer{
 		text-align: center !important;
