@@ -7,6 +7,9 @@ body{
 #navbar{
 	padding: 10px 40px;
 	background-color: #4b339d;
+	position: sticky !important;
+	top: 0;
+	z-index: 1 !important;
 /*background-color: #3f3d56;*/
 	font-size: 18px;
 	margin: 0;
@@ -229,7 +232,7 @@ footer{
 		display: block;
 	}
 	.foot-right-p{
-		width: 500px;
+		width:250px;
 		display: inline-block;
 	}
 	#footer{

@@ -1,0 +1,16 @@
+.paydue{
+	padding: 50px ;
+}
+.paydue-h1{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.form-label-group{
+	padding-bottom: 20px;
+}
+#no-pad-b{
+	padding-bottom: 0px !important;
+}
+.pad-left{
+	padding-left: 15px;
+}
