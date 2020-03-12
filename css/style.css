@@ -9,6 +9,7 @@ body{
 	background-color: #4b339d;
 /*background-color: #3f3d56;*/
 	font-size: 18px;
+	margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: Signika Negative;
@@ -58,7 +59,7 @@ header{
 
 .section1{
 	padding:80px 0;
-	margin-left: -40px; 
+	margin-left: -40px;
 	line-height: 30px;
 }
 .section1-flex{
@@ -134,18 +135,14 @@ footer{
 }
  
 @media (max-width: 992px) {
+	body{
+		overflow-x: hidden;
+	}
 	header, .header-bg{
 		height: 80vh;
 	}
-	footer{
-		text-align: center !important;
-	}
-	.foot-div{
-		display: block;
-	}
-	.foot-right-p{
-		width: 500px;
-		display: inline-block;
+	.section1{
+		margin: 0px;
 	}
 	.section1-flex{
 		display: block;
@@ -157,4 +154,25 @@ footer{
 	.section1-flex div{
 		margin-bottom: 50px;
 	}
+	.advert-img, .safesecure-img, .pquest-img{
+		width: 300px;
+		height: 250px;
+	}
+	footer{
+		text-align: center !important;
+	}
+	.row{
+		margin: 0px !important;
+	}
+	.foot-div{
+		display: block;
+	}
+	.foot-right-p{
+		width: 500px;
+		display: inline-block;
+	}
+	#footer{
+		margin: 0px;
+	}
+
 }
