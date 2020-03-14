@@ -4,7 +4,7 @@
 	<title>NACOSS FUNAAB</title>
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -46,7 +46,7 @@
 	<header>
 		<div class="header-bg">
 			
-			<div class="animated fadeInDown">
+			<div class="animated wow fadeInDown" data-wow-delay="1s">
 				<h2 class="header-h2">
 					Welcome to NACOSS FUNAAB PORTAL
 				</h2>
@@ -59,7 +59,7 @@
 		</div>
 	</header>
 
-	<div class="mission">
+	<div class="mission wow animated slideInDown"  data-wow-delay="0.1s">
 		<h1 class="mission-h1">Our Mission and Objective</h1>
 		<p class="mission-p">
 			Our very aim is to discover the opportunities prevalent <br>
@@ -67,8 +67,8 @@
 		</p>
 	</div>
 
-	<div class="section1">
-		<h1 class="section1-h1">
+	<div class="section1 wow animated slideInUp" data-wow-delay="0.2s">
+		<h1 class="section1-h1 wow animated slideInUp">
 			What you can do on our platform
 		</h1>
 		<div class="section1-flex">
@@ -123,25 +123,25 @@
 	</div>
 
 	<div class="section2">
-		<div class="deptdue">
+		<div class="deptdue wow animated slideInLeft">
 			<a class="section2-a" href="pay.html">
 				<img src="images/dues.png">
 				<h2>Pay <br> Departmental Dues</h2>
 			 </a>
 		</div>
-		<div class="download-quest">
+		<div class="download-quest wow animated slideInLeft">
 			<a class="section2-a" href="pquest.html">
 				<img src="images/download.png">
 				<h2>Download <br> Past Questions</h2>
 		    </a>
 		</div>
-		<div class="enquiry">
+		<div class="enquiry wow animated slideInRight">
 			<a class="section2-a" href="contact.html">
 				<img src="images/enquiry.png">
 				<h2>Make Enquiry</h2>
 			</a>
 		</div>
-		<div class="about-nacoss">
+		<div class="about-nacoss wow animated slideInRight">
 			<a class="section2-a" href="about.html"> 
 				<img src="images/about.png">
 				<h2>About Nacoss</h2>
@@ -149,7 +149,7 @@
 		</div>
 	</div>
 
-	<div class="advert-div">
+	<div class="advert-div wow animated bounceInUp">
 		<h1 class="advert-h1">Advertise your Product Here</h1>
 		<img class="img-fluid" src="images/advert.jpg">
 	</div>
@@ -202,5 +202,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
