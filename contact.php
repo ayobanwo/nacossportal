@@ -93,8 +93,17 @@
 	
 	
 	<?php 
+	$name = $_POST['name'];
+	$email_add = $_POST['email_add'];
+	$llevel = $_POST['llevel'];
+	$phone_number = $_POST['phone_number'];
+	$message = $_POST['message'];
+	
+	$conn = mysqli_connect('localhost','root','','nacoss');
+	mysqli_query($conn, "INSERT INTO `contact`(name, email_add, llevel, phone_number, message) VALUES ('$name',
+	'$email_add','$llevel','$phone_number','$message')") or die(mysqli_error());
 function response($msg){
-	echo '<script type="text/javascript"> alert("'.$msg .'") </script>'
+	echo '<script type="text/javascript"> alert("'.$msg .'") </script>';
 	}
 if((isset($_POST['name']) && !empty($_POST['name']))
 && (isset($_POST['email_add']) && !empty($_POST['email_add']))
