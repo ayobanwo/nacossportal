@@ -38,7 +38,7 @@
 		          	<a class="nav-link" href="contact.html"><i class="fa fa-info"></i> Contact Us</a>
 		     	</li>
 		     	<li class="nav-item">
-		          	<a class="nav-link" href="about.html"><i class="fa fa-user-o"></i> About Us</a>
+		          	<a class="nav-link" href="about.html"><i class="fa fa-users"></i> About Us</a>
 		    		</li>
 	     	</ul>
 	 	</div>
@@ -47,7 +47,7 @@
 	<div class="paydue container">
 		<h1 class="paydue-h1 wow animated bounceInDown">NACOSS  DUE PAYMENT</h1>
 
-		<form class="needs-validation wow animated fadeIn"   data-wow-delay="0.5s" novalidate>
+		<form class="needs-validation wow animated slideInUp"   data-wow-delay="0.5s" novalidate>
 			<div class="form-label-group">
 			      <input type="text" id="inputname" class="form-control" placeholder="Full Name" required >
 			      <label for="inputname">Full Name</label>
@@ -155,25 +155,6 @@
     <script src="js/holder.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-// Disable form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Get the forms we want to add validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+    <script src="js/validate.js">
 </body>
 </html>
