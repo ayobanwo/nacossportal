@@ -90,10 +90,15 @@
 		</div>
 	</div>
 
-	<div class="advert-div wow slideInUp animated" data-wow-delay="0.6s">
+	<!-- <div class="advert-div wow slideInUp animated" data-wow-delay="0.6s">
 		<h1 class="advert-h1">Advertise your Product Here</h1>
 		<img class="img-fluid" src="images/advert.jpg">
-	</div>
+	</div>-->
+	<img class="ad" src="images/adv1.jpg">
+        <img class="ad" src="images/adv2.jpg">
+        <img class="ad" src="images/adv3.jpg">
+        <img class="ad" src="images/adv4.jpg">
+	
 	
 	<footer class="row">
 			<div class="col-md-4">
@@ -146,5 +151,26 @@
     <script src="js/holder.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+	
+	
+	<script type="text/javascript">
+//automatic slide 
+var slideIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var y= document.getElementsByClassName("ad");
+  for (i =0; i<y.length; i++) {
+    y[i].style.display="none";
+  }
+  slideIndex++;
+  if (slideIndex > y.length) {slideIndex = 1}
+  y[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+
+
+</script>
+	
 </body>
 </html>
