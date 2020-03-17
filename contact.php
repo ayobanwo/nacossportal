@@ -55,34 +55,34 @@
 
 	<form class="needs-validation wow animated slideInUp container"   data-wow-delay="0.5s" novalidate>
 		<div class="form-label-group">
-		      <input type="text" id="inputname" class="form-control" placeholder="Full Name" required >
+		      <input type="text" id="inputname" name="name" class="form-control" placeholder="Full Name" required >
 		      <label for="inputname">Full Name</label>
 		      <div class="valid-feedback">Valid.</div>
 		           <div class="invalid-feedback">Please fill out this field.</div>
 		 </div>
 
 		<div class="form-label-group">
-		      <input type="text" id="inputmatric" class="form-control" placeholder="Matric Number" required>
-		      <label for="inputmatric">Matric Number</label>
+		      <input type="text" id="inputmatric" name="llevel" class="form-control" placeholder="Level" required>
+		      <label for="inputmatric">Level</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 
 		<div class="form-label-group">
-		      <input type="email" id="inputemail" class="form-control" placeholder="Email Address" required>
+		      <input type="email" id="inputemail" name="email_add" class="form-control" placeholder="Email Address" required>
 		      <label for="inputemail">Email Address</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 
 		<div class="form-label-group" id="no-pad-b">
-		      <input type="tel" id="inputphone" class="form-control" placeholder="Phone Number" required>
+		      <input type="tel" id="inputphone" name="phone_number" class="form-control" placeholder="Phone Number" required>
 		      <label for="inputphone">Phone Number</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 
-		<textarea rows="3" class="form-control" placeholder="What would you like tell us ?"></textarea>
+		<textarea rows="3" name="message" class="form-control" placeholder="What would you like tell us ?"></textarea>
 		<br>
 		<button class="btn btn-lg btn-primary" id="submit-btn" type="submit">SUBMIT</button>
 	</form>
