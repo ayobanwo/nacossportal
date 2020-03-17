@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>NACOSS FUNAAB</title>
@@ -91,6 +90,34 @@
 		<h1 class="advert-h1">Advertise your Product Here</h1>
 		<img class="img-fluid" src="images/advert.jpg">
 	</div>
+	
+	
+	<?php 
+function response($msg){
+	echo '<script type="text/javascript"> alert("'.$msg .'") </script>'
+	}
+if((isset($_POST['name']) && !empty($_POST['name']))
+&& (isset($_POST['email_add']) && !empty($_POST['email_add']))
+&& (isset($_POST['llevel']) && !empty($_POST['llevel']))
+&& (isset($_POST['phone_number']) && !empty($_POST['phone_number']))
+&& (isset($_POST['message']) && !empty($_POST['message']))){
+    $name = $_POST['name'];
+    $email_add = $_POST['email_add'];
+    $llevel = $_POST['llevel'];
+    $message = $_POST['message'];
+    $to = "nacossfunaabchapter@gmail.com";
+    $headers = "From : " . $email_add;
+    
+    if( mail($to, $llevel, $message, $headers)){
+       response("Message Sent successfully, we will get back to you soon.");
+     }
+     else{
+       response("Your message was unable to send please try again later, thanks."); 
+    }
+}
+    ?> 
+	
+	
 	
 	<footer class="row">
 			<div class="col-md-4">
