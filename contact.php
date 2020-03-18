@@ -53,7 +53,7 @@
 		</p>
 	</header>
 
-	<form class="needs-validation wow animated slideInUp container"   data-wow-delay="0.5s" novalidate>
+	<form method="POST" action="contact.php" class="needs-validation wow animated slideInUp container"   data-wow-delay="0.5s" novalidate>
 		<div class="form-label-group">
 		      <input type="text" id="inputname" name="name" class="form-control" placeholder="Full Name" required >
 		      <label for="inputname">Full Name</label>
@@ -94,15 +94,6 @@
 	
 	
 	<?php 
-	$name = $_POST['name'];
-	$email_add = $_POST['email_add'];
-	$llevel = $_POST['llevel'];
-	$phone_number = $_POST['phone_number'];
-	$message = $_POST['message'];
-	
-	$conn = mysqli_connect('localhost','root','','nacoss');
-	mysqli_query($conn, "INSERT INTO `contact`(name, email_add, llevel, phone_number, message) VALUES ('$name',
-	'$email_add','$llevel','$phone_number','$message')") or die(mysqli_error());
 function response($msg){
 	echo '<script type="text/javascript"> alert("'.$msg .'") </script>';
 	}
@@ -115,6 +106,7 @@ if((isset($_POST['name']) && !empty($_POST['name']))
     $email_add = $_POST['email_add'];
     $llevel = $_POST['llevel'];
     $message = $_POST['message'];
+    $phone_number = $_POST['phone_number'];
     $to = "nacossfunaabchapter@gmail.com";
     $headers = "From : " . $email_add;
     
@@ -124,6 +116,9 @@ if((isset($_POST['name']) && !empty($_POST['name']))
      else{
        response("Your message was unable to send please try again later, thanks."); 
     }
+	$conn = mysqli_connect('localhost','root','','nacoss');
+	mysqli_query($conn, "INSERT INTO `contact`(name, email_add, llevel, phone_number, message) VALUES ('$name',
+	'$email_add','$llevel','$phone_number','$message')") or die(mysqli_error($conn));
 }
     ?> 
 	
