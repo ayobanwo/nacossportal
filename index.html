@@ -69,8 +69,8 @@
 		</p>
 	</div>
 	
-	<img class="ad" src="images/team.jpg">
-        <img class="ad" src="images/welcome.jpg">
+	<img class="slides" src="images/team.jpg">
+        <img class="slides" src="images/welcome.jpg">
 
 	<div class="section1 wow animated slideInUp" data-wow-delay="0.2s">
 		<h1 class="section1-h1 wow animated slideInUp container">
@@ -224,12 +224,18 @@ carousel();
 function carousel() {
   var i;
   var y= document.getElementsByClassName("ad");
+  var x= document.getElementsByClassName("slides");
   for (i =0; i<y.length; i++) {
     y[i].style.display="none";
   }
+  for (i =0; i<x.length; i++) {
+    x[i].style.display="none";
+  }
   slideIndex++;
   if (slideIndex > y.length) {slideIndex = 1}
+  if (slideIndex > x.length) {slideIndex = 1}
   y[slideIndex-1].style.display = "block";
+  x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 5000);
 }
 
