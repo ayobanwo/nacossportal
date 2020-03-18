@@ -68,13 +68,18 @@
 			in NACOSS and to tackle her problems.
 		</p>
 	</div>
-	
+	<div style"position:relative; z-index:1">
 	<img class="ad" src="images/team.jpg">
         <img class="ad" src="images/welcome.jpg">
 	<img class="ad" src="images/adv1.jpg">
         <img class="ad" src="images/adv2.jpg">
         <img class="ad" src="images/adv3.jpg">
         <img class="ad" src="images/adv4.jpg">
+	</div>
+	
+<button style="position: absolute; z-index: 2; margin-left: 5%;  margin-top: -300px;" onclick="present(+1)">&#10094;</button> 
+
+<button style="position: absolute; z-index: 2; margin-left:90%; margin-top: -300px;" onclick="next(-1)">&#10095;</button>
 
 	<div class="section1 wow animated slideInUp" data-wow-delay="0.2s">
 		<h1 class="section1-h1 wow animated slideInUp container">
@@ -158,14 +163,6 @@
 		</div>
 	</div>
 	
-  <!--<div class="butto">
-<button id="butt2" class="dleftbutton" onclick="plusDivs(-1)">&#10094;</button>
-<button id="butt2" class="drightbutton" onclick="plusDivs(+1)">&#10095;</button>
-</div> -->
-	
-
-	
-	
 	<footer class="row" id="footer">
 			<div class="col-lg-4">
 				<h1 class="footer-h1">
@@ -232,7 +229,29 @@ function carousel() {
   setTimeout(carousel, 5000);
 }
 
-
+var index = 1;
+var timer = null;
+show(index);
+function next(n) {
+  clearTimeout(timer);
+  show(index += n);
+}
+function present(n) {
+  clearTimeout(timer);
+  show(index -= n);
+}
+function show(n) {
+  var i;
+  var slides = document.getElementsByClassName("ad");
+  if (n==undefined){n = ++index}
+  if (n > slides.length) {index = 1}
+  if (n < 1) {index = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[index-1].style.display = "block";
+  timer = setTimeout(show, 5000);
+}
 </script>
 	
 
