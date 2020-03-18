@@ -51,6 +51,10 @@
         <img class="ad" src="images/adv2.jpg">
         <img class="ad" src="images/adv3.jpg">
         <img class="ad" src="images/adv4.jpg">
+	
+<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left: 5%;  margin-top: -320px;" onclick="present(+1)">&#10094;</button> 
+
+<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left:82%; margin-top: -320px;" onclick="next(-1)">&#10095;</button>
 
 	<h1 class="pquest-h1 wow animated bounceInDown" data-wow-delay="0.5s">
 		Download Past Questions
@@ -175,6 +179,30 @@ function carousel() {
   setTimeout(carousel, 8000);
 }
 
+		
+var index = 1;
+var timer = null;
+show(index);
+function next(n) {
+  clearTimeout(timer);
+  show(index += n);
+}
+function present(n) {
+  clearTimeout(timer);
+  show(index -= n);
+}
+function show(n) {
+  var i;
+  var slides = document.getElementsByClassName("ad");
+  if (n==undefined){n = ++index}
+  if (n > slides.length) {index = 1}
+  if (n < 1) {index = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[index-1].style.display = "block";
+  timer = setTimeout(show, 5000);
+} 
 
 </script>
 	
