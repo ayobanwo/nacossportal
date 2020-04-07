@@ -10,8 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Signika+Negative:300,400,600,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/navfoot.css">
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/floating-labels.css">
 	<link rel="icon" href="images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +34,7 @@
 		          	<a class="nav-link" href="pquest.html"><i class="fa fa-book"></i> Past Questions</a>
 		     	</li>
 		     	<li class="nav-item active">
-		          	<a class="nav-link" href="contact.html"><i class="fa fa-info"></i> Contact Us</a>
+		          	<a class="nav-link" href="contact.php"><i class="fa fa-info"></i> Contact Us</a>
 		     	</li>
 		     	<li class="nav-item">
 		          	<a class="nav-link" href="about.html"><i class="fa fa-users"></i> About Us</a>
@@ -132,7 +131,7 @@ if((isset($_POST['name']) && !empty($_POST['name']))
 				<ul class="foot-pg-ul">
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="index.html">HOME</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="pay.html">PAYMENTS</a></li> |
-					<li class="foot-pg-li "><a  class="foot-pg-a" href="contact.html">CONTACT</a></li> |
+					<li class="foot-pg-li "><a  class="foot-pg-a" href="contact.php">CONTACT</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="about.html">ABOUT</a></li> 
 				</ul>
 

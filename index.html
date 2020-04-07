@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
@@ -13,9 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Signika+Negative:300,400,600,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style2.css">
-	<link rel="icon" href="images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
@@ -46,19 +44,63 @@
 	</nav>
 
 	<header>
-		<div class="header-bg">
-			
-			<div class="animated wow fadeInDown" data-wow-delay="1s">
-				<h2 class="header-h2">
-					Welcome to NACOSS FUNAAB PORTAL
-				</h2>
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	        <ol class="carousel-indicators">
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	        </ol>
+	        <div class="carousel-inner">
+	        	<div class="welcome-slide carousel-item active">
+	        		<div class="welcome-slide-bg">
+		        		<div class="animated wow fadeInDown" data-wow-delay="1s">
+		        			<h2 class="header-h2">
+		        				<span class="big-letter">W</span>elcome to NACOSS FUNAAB PORTAL
+		        			</h2>
+		        			<p class="header-p">
+		        				Networking the World... <i class="fa fa-globe"></i>
+		        			</p>
+		        			<span class="header-span">...Towards Advanced Technology!</span>
+		        		</div>
+	        		</div>
+	        	</div>
+	            <div class="fresher-slide carousel-item">
+		            <div class="fresher-slide-bg">
+		        		<div class="animated wow fadeInDown" data-wow-delay="1s">
+		        			<h2 class="header-h2">
+		        				We specially welcome our Freshers to this great Citadel of Knowledge
+		        			</h2>
+		        			<p class="header-p">
+		        				Anticipate our Freshers Orientation
+		        			</p>
+		        			<button class="btn btn-primary slide-info">Learn More</button>
+		        		</div>
+	        		</div>
+	            </div>
 
-				<p class="header-p">
-					Networking the World... <i class="fa fa-globe"></i>
-				</p>
-				<span class="header-span">...Towards Advanced Technology!</span>
-			</div>
-		</div>
+	            <div class="updates-slide carousel-item">
+	            	<div class="updates-slide-bg">
+		        		<div class="animated wow fadeInDown" data-wow-delay="1s">
+		        			<h2 class="header-h2">
+		        				Keeping checking our platform for updates and information
+		        			</h2>
+		        			<p class="header-p">
+		        				Anticipate our Synposium
+		        			</p>
+		        			<button class="btn btn-primary slide-info">Learn More</button>
+		        		</div>
+	        		</div>
+	            </div>
+	        </div>
+	        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+	          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+	          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	          <span class="sr-only">Next</span>
+	        </a>
+	      </div>
 	</header>
 
 	<div class="mission wow animated slideInDown"  data-wow-delay="0.1s">
@@ -68,18 +110,6 @@
 			in NACOSS and to tackle her problems.
 		</p>
 	</div>
-	<div style"position:relative; z-index:1">
-	<img class="ad" src="images/team.jpg">
-        <img class="ad" src="images/welcome.jpg">
-	<img class="ad" src="images/adv1.jpg">
-        <img class="ad" src="images/adv2.jpg">
-        <img class="ad" src="images/adv3.jpg">
-        <img class="ad" src="images/adv4.jpg">
-	</div>
-	
-<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left: 5%;  margin-top: -320px;" onclick="present(+1)">&#10094;</button> 
-
-<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left:82%; margin-top: -320px;" onclick="next(-1)">&#10095;</button>
 
 	<div class="section1 wow animated slideInUp" data-wow-delay="0.2s">
 		<h1 class="section1-h1 wow animated slideInUp container">
@@ -162,6 +192,11 @@
 			</a>
 		</div>
 	</div>
+
+	<div class="advert-div wow animated bounceInUp">
+		<h1 class="advert-h1">Advertise your Product Here</h1>
+		<img class="img-fluid" src="images/advert.jpg">
+	</div>
 	
 	<footer class="row" id="footer">
 			<div class="col-lg-4">
@@ -205,6 +240,7 @@
 					<i class="fa fa-instagram foot-icons"></i>
 				</div>
 			</div>
+			<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	</footer>
 
 	<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
@@ -212,48 +248,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/holder.min.js"></script>
     <script src="js/wow.min.js"></script>
-	
-	<script type="text/javascript">
-//automatic slide 
-var slideIndex = 0;
-carousel();
-function carousel() {
-  var i;
-  var y= document.getElementsByClassName("ad");
-  for (i =0; i<y.length; i++) {
-    y[i].style.display="none";
-  }
-  slideIndex++;
-  if (slideIndex > y.length) {slideIndex = 1}
-  y[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
-}
-
-var index = 1;
-var timer = null;
-show(index);
-function next(n) {
-  clearTimeout(timer);
-  show(index += n);
-}
-function present(n) {
-  clearTimeout(timer);
-  show(index -= n);
-}
-function show(n) {
-  var i;
-  var slides = document.getElementsByClassName("ad");
-  if (n==undefined){n = ++index}
-  if (n > slides.length) {index = 1}
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[index-1].style.display = "block";
-  timer = setTimeout(show, 5000);
-}
-</script>
-	
-
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/alert.js"></script>
 </body>
 </html>

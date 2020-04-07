@@ -11,10 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Signika+Negative:300,400,600,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/navfoot.css">
-	<link rel="stylesheet" type="text/css" href="css/pquest.css">
-	<link rel="stylesheet" type="text/css" href="css/style2.css">
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -44,24 +41,13 @@
 	     	</ul>
 	 	</div>
 	</nav>
-	
-	<img class="ad" src="images/team.jpg">
-        <img class="ad" src="images/welcome.jpg">
-	<img class="ad" src="images/adv1.jpg">
-        <img class="ad" src="images/adv2.jpg">
-        <img class="ad" src="images/adv3.jpg">
-        <img class="ad" src="images/adv4.jpg">
-	
-<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left: 5%;  margin-top: -320px;" onclick="present(+1)">&#10094;</button> 
-
-<button style="position: absolute; z-index: 2; background-color:red; border-radius:5px; width:50px; height:50px; margin-left:82%; margin-top: -320px;" onclick="next(-1)">&#10095;</button>
 
 	<h1 class="pquest-h1 wow animated bounceInDown" data-wow-delay="0.5s">
 		Download Past Questions
 	</h1>
 	
 	<div class="cards animated fadeIn">
-		<div class="levelcard wow animated zoomInUp"  data-wow-delay="0.3s" >
+		<div class="levelcard wow animated fadeInUp"  data-wow-delay="0.3s" >
 			<h2 class="pquest-h2 " id="l100" >
 				100 Level
 			</h2>
@@ -71,7 +57,7 @@
 				<a href="docs/quest.pdf" class="pdf-link" download>Second Semester Questions</a>
 			</p>
 		</div>
-		<div class="levelcard wow animated zoomInUp"  data-wow-delay="0.5s">
+		<div class="levelcard wow animated fadeInUp"  data-wow-delay="0.5s">
 			<h2 class="pquest-h2" id="l200" >
 				200 Level
 			</h2>
@@ -81,7 +67,7 @@
 				<a href="docs/quest.pdf" class="pdf-link" download>Second Semester Questions</a>
 			</p>
 		</div>
-		<div class="levelcard wow animated zoomInUp" data-wow-delay="0.7s" >
+		<div class="levelcard wow animated fadeInUp" data-wow-delay="0.7s" >
 			<h2 class="pquest-h2" id="l300" >
 				300 Level
 			</h2>
@@ -91,7 +77,7 @@
 				<a href="docs/quest.pdf" class="pdf-link" download>Second Semester Questions</a>
 			</p>
 		</div>
-		<div class="levelcard wow animated zoomInUp" data-wow-delay="0.9s" >
+		<div class="levelcard wow animated fadeInUp" data-wow-delay="0.9s" >
 			<h2 class="pquest-h2" id="l400" >
 				400 Level
 			</h2>
@@ -103,12 +89,10 @@
 		</div>
 	</div>
 
-	<!-- <div class="advert-div wow slideInUp animated" data-wow-delay="0.6s">
+	<div class="advert-div wow slideInUp animated" data-wow-delay="0.6s">
 		<h1 class="advert-h1">Advertise your Product Here</h1>
 		<img class="img-fluid" src="images/advert.jpg">
-	</div>-->
-	
-	
+	</div>
 	
 	<footer class="row">
 			<div class="col-md-4">
@@ -150,6 +134,7 @@
 				<i class="fa fa-twitter foot-icons"></i>
 				<i class="fa fa-instagram foot-icons"></i>
 			</div>
+			<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	</footer>
 
 
@@ -161,50 +146,7 @@
     <script src="js/holder.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-	
-	
-	<script type="text/javascript">
-//automatic slide 
-var slideIndex = 0;
-carousel();
-function carousel() {
-  var i;
-  var y= document.getElementsByClassName("ad");
-  for (i =0; i<y.length; i++) {
-    y[i].style.display="none";
-  }
-  slideIndex++;
-  if (slideIndex > y.length) {slideIndex = 1}
-  y[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 8000);
-}
-
-		
-var index = 1;
-var timer = null;
-show(index);
-function next(n) {
-  clearTimeout(timer);
-  show(index += n);
-}
-function present(n) {
-  clearTimeout(timer);
-  show(index -= n);
-}
-function show(n) {
-  var i;
-  var slides = document.getElementsByClassName("ad");
-  if (n==undefined){n = ++index}
-  if (n > slides.length) {index = 1}
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[index-1].style.display = "block";
-  timer = setTimeout(show, 5000);
-} 
-
-</script>
-	
+    <script src="js/jquery.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

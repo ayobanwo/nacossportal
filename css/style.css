@@ -3,16 +3,19 @@ body{
 	font-family: Questrial;
 	background-color: #f7f7f7;
 }
-
+/****************************
+*												*
+*      Homepage Style				*
+*												*
+*****************************/
 #navbar{
 	padding: 10px 40px;
 	background-color: #4b339d;
 	position: sticky !important;
 	top: 0;
-	z-index: 1 !important;
+	z-index: 100 !important;
 /*background-color: #3f3d56;*/
 	font-size: 18px;
-	margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: Signika Negative;
@@ -26,17 +29,56 @@ h1, h2, h3, h4, h5, h6{
 .nav-link{
 	margin: 0 16px;
 }
+
+/*******Header*********/
 header{
 	color: #ffffff;
-	background-image: url("../images/himg2a.jpg");
-	text-align: center;
-	font-family: Signika Negative;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
 	height: 100vh;
 }
 .header-bg{
+	text-align: center;
+	font-family: Signika Negative;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 10%;
+	height: 100vh;
+}
+.welcome-slide{
+	color: #ffffff;
+	background-image: url("../images/shimage.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.welcome-slide-bg{
+	text-align: center;
+	font-family: Signika Negative;
+	padding: 10%;
+	height: 100vh;
+}
+.fresher-slide{
+	color: #ffffff;
+	background-image: url("../images/welcome.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}	
+.fresher-slide-bg{
+	text-align: center;
+	font-family: Signika Negative;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10%;
+	height: 100vh;
+}
+.updates-slide{
+	color: #ffffff;
+	background-image: url("../images/slide.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}	
+.updates-slide-bg{
+	text-align: center;
+	font-family: Signika Negative;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 10%;
 	height: 100vh;
@@ -46,7 +88,7 @@ header{
 	font-size:40px;
 	padding-bottom: 10px;
 }
-.header-h2::first-letter{
+.big-letter{
 	font-size: 80px;
 	font-family: verdena;
 }
@@ -59,7 +101,7 @@ header{
 	font-family: cursive;
 	color: rgba(255,255,255,0.6);
 }
-
+/**************************/
 .mission{
 	color: #000;
 	text-align: center;
@@ -116,6 +158,8 @@ header{
 	flex-wrap: wrap;
 	padding: 100px 20px;
 	justify-content: center;
+	height: 100vh;
+	align-items: center;
 }
 .section2 div{
 	margin: 40px;
@@ -190,9 +234,220 @@ footer{
 	font-size: 12px;
 	margin-bottom: 25px;
 }
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    Payment page Style				
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+.paydue{
+	padding: 50px ;
+}
+.paydue-h1{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.form-label-group{
+	padding-bottom: 20px;
+}
+#no-pad-b{
+	padding-bottom: 0px !important;
+}
+.pad-left{
+	padding-left: 15px;
+}
+#submit-btn{
+	margin:0 auto;
+	display:block;
+}
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    Past Question  page Style				
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+.pquest-h1{
+	text-align: center;
+	padding: 80px;
+}
+.cards{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 100px;  
+}
+.pquest-h2{
+	background-color: maroon;
+	padding: 80px 40px;
+	border-radius: 20px 50px 0px 0px;
+	color: white;
+	font-size:40px;
+}
+.levelcard{
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 20px 50px;
+	line-height: 40px;
+	margin: 30px auto;
+}
+.level-p{
+	padding: 30px 50px;
+}
+.pdf-link{
+	color: #000;
+}
+#l100,#l300{
+	background-color: #494765;
+}
+#l200, #l400{
+	background-color: #2c3f75;
+}
+.advert-div{
+	background-color: #c7f6fe;
+	text-align: center;
+	padding-top: 50px;
+}
+@media(max-width: 768px){
+	.levelcard:hover{
+		transform: scale(1);
+	}
+}
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    Contact  page Style				
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+.contact-heading{
+	text-align: center;
+	padding: 50px;
+}
+form{
+	padding-bottom: 20px;
+}
+#submit-btn{
+	margin:0 auto;
+	display:block;
+}
+.contact-textarea{
+	border-radius: 5px;
+}
+.contact-advert-div{
+	background-color: #c7f6fe;
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    About  page Style				
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+.about-us-section{
+	text-align: center;
+	padding: 50px;
+}
+.about-hr{
+	width: 13%;
+	margin: auto;
+	border:  2px rgba(0,0,0, 0.7) solid;
+}
+.hod-card{
+	text-align: center;
+}
+.hod-img{
+	border-radius: 50%;
+}
+.nacoss-exco-h1{
+	text-align: center;
+	padding: 50px;
+	letter-spacing: 15px;
+	color: #2f042f;
+}
+.team-evo{
+	color: #24123dcf;
+	letter-spacing: 1px;
+}
+.nacoss-p{
+	text-align: center;
+}
+.card-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.exco-card{
+	display: inline;
+/*	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+	padding:50px 30px;
+	text-align: center;
+/*	border-radius: 20px;*/
+	margin: 20px;
+	width: 255px;
+}
+.exco-img{
+	margin-top: 20px;
+	width: 180px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.exco-name{
+	margin:0;
+	margin-top: 20px;
+}
+.pka{
+	font-size: 13px;
+}
+.post{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*BACK TO TOP BUTTON STYLE*/
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+    opacity: 1;
+}
+
 .animated{
 	animation-duration: 1s !important;
 }
+
+
+
+/*     MEDIA QUERIES */
+
+
+
+@media (max-width: 576px) {
+	.nacoss-exco-h1{
+		letter-spacing: 5px;
+	}
+}
+
 @media (max-width: 992px) {
 	body{
 		overflow-x: hidden;
@@ -240,5 +495,7 @@ footer{
 	#footer{
 		margin: 0px;
 	}
-
+	#back2Top{
+		right: 10px;
+	}
 }
