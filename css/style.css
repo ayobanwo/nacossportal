@@ -437,6 +437,15 @@ form{
 	.nacoss-exco-h1{
 		letter-spacing: 5px;
 	}
+	.welcome-slide{
+		background-image: url("../images/welcome-mobile.jpg");
+	}	
+	.fresher-slide{
+		background-image: url("../images/fresher-mobile.jpg");
+	}	
+	.update-slide{
+		background-image: url("../images/update-mobile.jpg");
+	}	
 }
 
 @media (max-width: 992px) {
