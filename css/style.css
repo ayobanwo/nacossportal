@@ -44,12 +44,10 @@ header{
 }
 .welcome-slide{
 	color: #ffffff;
-	background-image: url("../images/shimage.jpg");
+	background-image: url("../images/welcome.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-}
-.welcome-slide-bg{
 	text-align: center;
 	font-family: Signika Negative;
 	padding: 10%;
@@ -57,32 +55,26 @@ header{
 }
 .fresher-slide{
 	color: #ffffff;
-	background-image: url("../images/welcome.jpg");
+	background-image: url("../images/fresher.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-}	
-.fresher-slide-bg{
 	text-align: center;
 	font-family: Signika Negative;
-	background-color: rgba(0, 0, 0, 0.6);
 	padding: 10%;
 	height: 100vh;
-}
+}	
 .updates-slide{
 	color: #ffffff;
-	background-image: url("../images/slide.jpg");
+	background-image: url("../images/update.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-}	
-.updates-slide-bg{
 	text-align: center;
 	font-family: Signika Negative;
-	background-color: rgba(0, 0, 0, 0.8);
 	padding: 10%;
 	height: 100vh;
-}
+}	
 .header-h2{
 	margin-top: 100px;
 	font-size:40px;
@@ -158,7 +150,6 @@ header{
 	flex-wrap: wrap;
 	padding: 100px 20px;
 	justify-content: center;
-	height: 100vh;
 	align-items: center;
 }
 .section2 div{
