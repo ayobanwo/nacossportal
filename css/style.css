@@ -279,12 +279,17 @@ footer{
 	border-radius: 20px 50px;
 	line-height: 40px;
 	margin: 30px auto;
+	width: 300px;
 }
-.level-p{
-	padding: 30px 50px;
+.level-content{
+	padding: 30px 25px;
 }
-.pdf-link{
+.level-item{
 	color: #000;
+}
+.drp-items{
+	color: #0d0c65;
+	font-size: 80%;
 }
 #l100,#l300{
 	background-color: #494765;
