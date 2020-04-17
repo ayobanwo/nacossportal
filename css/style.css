@@ -346,12 +346,6 @@ form{
 	margin: auto;
 	border:  2px rgba(0,0,0, 0.7) solid;
 }
-.about-hrr{
-	width: 13%;
-	margin: auto;
-	margin-left:-0.2%;
-	border:  2px rgba(0,0,0, 0.7) solid;
-}
 .hod-card{
 	text-align: center;
 	padding: 30px;
@@ -403,6 +397,28 @@ form{
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 1px;
+}
+
+
+/*
+
+     Photo Speaks Page Style
+
+*/
+
+.photo-speaks{
+	padding-top: 30px;
+}
+.photo-speaks-hr{
+	width: 13%;
+	margin: auto;
+	border:  2px rgba(0,0,0, 0.7) solid;
+}
+.eapps-instagram-feed-posts-view{
+	display: flex !important;
+	flex-wrap: wrap !important;
+	justify-content: space-around !important;
+	align-items: center !important;
 }
 
 /*BACK TO TOP BUTTON STYLE*/
@@ -458,6 +474,12 @@ form{
 	.update-slide{
 		background-image: url("../images/update-mobile.jpg");
 	}	
+	.eapps-instagram-feed-posts-view{
+		justify-content: initial !important;
+	}
+	.photo-speaks-hr{
+		width: 20%;
+	}
 }
 
 @media (max-width: 992px) {
