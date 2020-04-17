@@ -344,13 +344,13 @@ form{
 .about-hr{
 	width: 13%;
 	margin: auto;
-	margin-left:-5%;
+	margin-left:-1%;
 	border:  2px rgba(0,0,0, 0.7) solid;
 }
 .about-hrr{
 	width: 13%;
 	margin: auto;
-	margin-left:-20%;
+	margin-left:-1%;
 	border:  2px rgba(0,0,0, 0.7) solid;
 }
 .hod-card{
