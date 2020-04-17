@@ -39,6 +39,10 @@
 		     	<li class="nav-item">
 		          	<a class="nav-link" href="about.html"><i class="fa fa-users"></i> About Us</a>
 		    		</li>
+				</li>
+		     	<li class="nav-item">
+		          	<a class="nav-link" href="photos.html"><i class="fa fa-photo"></i> About Us</a>
+		    		</li>
 	     	</ul>
 	 	</div>
 	</nav>
@@ -132,7 +136,8 @@ if((isset($_POST['name']) && !empty($_POST['name']))
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="index.html">HOME</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="pay.html">PAYMENTS</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="contact.php">CONTACT</a></li> |
-					<li class="foot-pg-li "><a  class="foot-pg-a" href="about.html">ABOUT</a></li> 
+					<li class="foot-pg-li "><a  class="foot-pg-a" href="about.html">ABOUT</a></li> |
+					<li class="foot-pg-li "><a  class="foot-pg-a" href="photos.html">GALLERY</a></li>
 				</ul>
 
 				<p class="foot-p"> ©2020 NACOSS FUNAAB </p>
