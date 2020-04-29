@@ -506,6 +506,14 @@ form{
 		width: 300px;
 		height: 250px;
 	}
+	.m-down-position{
+		position: relative;
+		top: 300px;
+	}
+	.m-up-position{
+		position: relative;
+		bottom: 240px;
+	}
 	.section2{
 		padding: 0px;
 	}
