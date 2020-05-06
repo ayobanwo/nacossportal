@@ -28,7 +28,7 @@
 		          	<a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
 		     	</li>
 		     	<li class="nav-item ">
-		          	<a class="nav-link" href="pay.html"><i class="fa fa-credit-card"></i> Make Payments</a>
+		          	<a class="nav-link" href="" onclick="maintain()"><i class="fa fa-credit-card"></i> Make Payments</a>
 		     	</li>
 		     	<li class="nav-item active">
 		          	<a class="nav-link" href="lectmat.html"><i class="fa fa-file-text"></i> Lecture Materials</a>
@@ -71,8 +71,9 @@
 					</div>
 				<a href="#drp1c" class="level-item" data-toggle="collapse">Past Questions  <i class="fa fa-caret-down"></i></a>
 					<div id="drp1c" class="collapse">
-							<a href="docs/100L/mts101pq.zip" class="drp-items" download> MTS101 Past Questions</a><br>
-							<a href="docs/100L/mts101pq.zip" class="drp-items" download>MTS102 - Past Questions</a><br>
+							<a href="docs/cat100lvl.pdf" class="drp-items" download> CATS</a><br>
+							<a href="docs/1stsem100lvl.pdf" class="drp-items" download>First Semester Past Questions</a><br>
+							<a href="docs/2ndsem100lvl.pdf" class="drp-items" download>Second Semester Past Questions</a><br>
 					</div>
 			</div>
 		</div>
@@ -82,9 +83,14 @@
 			</h2>
 			<div class="level-content" >
 				<a href="docs/200L/CSC200lCourseOutline.pdf" class="level-item" download>Course Outline</a><br>
-				<a href=".pdf" class="level-item" download>First Semester Lecture Notes <i class="fa fa-caret-down"></i></a><br>
-				<a href=".pdf" class="level-item" download>Second Semester Lecture Notes <i class="fa fa-caret-down"></i></a><br>
-				<a href=".pdf" class="level-item" download>Past Questions  <i class="fa fa-caret-down"></i></a>
+				<a href="" class="level-item" onclick="maintain()">First Semester Lecture Notes <i class="fa fa-caret-down"></i></a><br>
+				<a href="" class="level-item" onclick="maintain()">Second Semester Lecture Notes <i class="fa fa-caret-down"></i></a><br>
+				<a href="#drp2c" class="level-item" data-toggle="collapse">Past Questions  <i class="fa fa-caret-down"></i></a>
+					<div id="drp2c" class="collapse">
+							<a href="docs/cats200lvl.pdf" class="drp-items" download> CATS</a><br>
+							<a href="docs/1stsem200lvl.pdf" class="drp-items" download>First Semester Past Questions</a><br>
+							<a href="docs/2ndsem200lvl.pdf" class="drp-items" download>Second Semester Past Questions</a><br>
+					</div>
 			</div>
 		</div>
 		<div class="levelcard wow animated zoomInUp" data-wow-delay="0.23s">
@@ -100,7 +106,7 @@
 						<a href="docs/300L/CSC307-ComplingTechniques.pdf" class="drp-items" download>CSC307 - Compiling Techniques</a><br>
 					</div>
 				<a href=".pdf" class="level-item" download>Second Semester Lecture Notes <i class="fa fa-caret-down"></i></a><br>
-				<a href="docs/300L/300lPastQ.zip" class="level-item" download>Past Questions  <i class="fa fa-caret-down"></i></a>
+				<a href="docs/300lvl.pdf" class="level-item" download>Past Questions <!--  <i class="fa fa-caret-down"></i> --></a>
 			</div>
 		</div>
 		<div class="levelcard wow animated zoomInUp" data-wow-delay="0.28s">
@@ -121,7 +127,12 @@
 							<a href="docs/400L/CSC448Technopreneurship.pdf" class="drp-items" download>CSC448 - Technopreneurship</a><br>
 							<a href="docs/400L/CSC416crypt1.pdf" class="drp-items" download>CSC448 - Computer Security and Cryptography</a><br>
 					</div>
-				<a href=".pdf" class="level-item" download>Past Questions  <i class="fa fa-caret-down"></i></a>
+				<a href="#drp4c" class="level-item" data-toggle="collapse">Past Questions  <i class="fa fa-caret-down"></i></a>
+					<div id="drp4c" class="collapse">
+							<a href="" onclick="maintain()" class="drp-items"> CATS</a><br>
+							<a href="docs/1stsem400lvl.pdf" class="drp-items" download>First Semester Past Questions</a><br>
+							<a href="docs/2ndsem400lvl.pdf" class="drp-items" download>Second Semester Past Questions</a><br>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -138,7 +149,7 @@
 				</h1>
 				<ul class="foot-pg-ul">
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="index.html">HOME</a></li> |
-					<li class="foot-pg-li "><a  class="foot-pg-a" href="pay.html">PAYMENTS</a></li> |
+					<li class="foot-pg-li "><a  class="foot-pg-a" href="" onclick="maintain()">PAYMENTS</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="contact.php">CONTACT</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="about.html">ABOUT</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="photos.html">GALLERY</a></li>
@@ -168,9 +179,9 @@
 					This site offers payment features, departmental updates, advertisement and past question downloads as sponsored by NACOSS FUNAAB and designed by PRISSOLUTIONS
 				</p>
 
-				<i class="fa fa-facebook foot-icons"></i>
+				<a href="https://web.facebook.com/nacoss_funaab-100562041636964/" target="blank"><i class="fa fa-facebook foot-icons"></i></a>
 				<i class="fa fa-twitter foot-icons"></i>
-				<i class="fa fa-instagram foot-icons"></i>
+				<a href="https://www.instagram.com/nacoss_funaab/" target="blank"><i class="fa fa-instagram foot-icons"></i></a>
 			</div>
 			<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	</footer>
@@ -186,5 +197,6 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/maintain.js"></script>
 </body>
 </html>
