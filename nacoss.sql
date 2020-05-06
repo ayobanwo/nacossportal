@@ -19,22 +19,22 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `nacoss`
+-- Database: `ncs`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Table structure for table `contactoo`
 --
 
-CREATE TABLE `contact` (
-  `ID` int(5) NOT NULL,
-  `name` char(30) NOT NULL,
-  `email_add` varchar(25) NOT NULL,
-  `phone_number` bigint(15) NOT NULL,
-  `message` varchar(500) NOT NULL,
-  `llevel` varchar(10) NOT NULL
+CREATE TABLE `contactoo` (
+  `IDee` int(5) NOT NULL,
+  `nameee` char(30) NOT NULL,
+  `email_addee` varchar(25) NOT NULL,
+  `phone_numberee` bigint(15) NOT NULL,
+  `messageee` varchar(500) NOT NULL,
+  `llevelee` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -58,10 +58,10 @@ CREATE TABLE `payment` (
 --
 
 --
--- Indexes for table `contact`
+-- Indexes for table `contactoo`
 --
-ALTER TABLE `contact`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `contactoo`
+  ADD PRIMARY KEY (`IDee`);
 
 --
 -- Indexes for table `payment`
@@ -74,10 +74,10 @@ ALTER TABLE `payment`
 --
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT for table `contactoo`
 --
-ALTER TABLE `contact`
-  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `contactoo`
+  MODIFY `IDee` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `payment`
