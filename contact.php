@@ -28,7 +28,7 @@
 		          	<a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
 		     	</li>
 		     	<li class="nav-item">
-		          	<a class="nav-link" href="pay.html"><i class="fa fa-credit-card"></i> Make Payments</a>
+		          	<a class="nav-link" href="" onclick="maintain()"><i class="fa fa-credit-card"></i> Make Payments</a>
 		     	</li>
 		     	<li class="nav-item">
 		          	<a class="nav-link" href="lectmat.html"><i class="fa fa-file-text"></i> Lecture Materials</a>
@@ -47,45 +47,57 @@
 	 	</div>
 	</nav>
 	
-	<header>
+	<!-- <header>
 		<h1 class="contact-h1"> Contact Us </h1>
 		<p>
 			You can make enquirues, suggestions, <br>
 			leave a comment, give your opinions about matters and lodge complains.<br>
 			Just fill out the form below with correct information and we will get back to you as soon as possible
 		</p>
-	</header>
+	</header> -->
+
+	<section class="about-us-section container">
+		<h1 class="wow animated bounceInDown" data-wow-delay="0.5s">
+			Contact Us
+			<hr class="about-hr">
+		</h1> <br>
+		<p class="wow animated fadeIn" data-wow-delay="0.7s">
+			You can make enquiries, suggestions, <br>
+			leave a comment, give your opinions about matters and lodge complains.<br>
+			Just fill out the form below with correct information and we will get back to you as soon as possible
+		</p>
+	</section>
 
 	<form method="POST" action="contact.php" class="needs-validation wow animated slideInUp container"   data-wow-delay="0.5s" novalidate>
 		<div class="form-label-group">
-		      <input type="text" id="inputname" name="name" class="form-control" placeholder="Full Name" required >
+		      <input type="text" pattern="[a-z A-Z -]+" title="Letters Only" id="inputname" name="nameee" class="form-control" placeholder="Full Name" required >
 		      <label for="inputname">Full Name</label>
 		      <div class="valid-feedback">Valid.</div>
-		           <div class="invalid-feedback">Please fill out this field.</div>
+		           <div class="invalid-feedback">Please fill out this field correctly.</div>
 		 </div>
 
 		<div class="form-label-group">
-		      <input type="text" id="inputmatric" name="llevel" class="form-control" placeholder="Level" required>
+		      <input type="text" pattern="[0-9]+" title="Numbers Only" id="inputmatric" name="llevelee" class="form-control" placeholder="Level" required>
 		      <label for="inputmatric">Level</label>
 		      <div class="valid-feedback">Valid.</div>
-		      <div class="invalid-feedback">Please fill out this field.</div>
+		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
 		<div class="form-label-group">
-		      <input type="email" id="inputemail" name="email_add" class="form-control" placeholder="Email Address" required>
+		      <input type="email" id="inputemail" name="email_addee" class="form-control" placeholder="Email Address" required>
 		      <label for="inputemail">Email Address</label>
 		      <div class="valid-feedback">Valid.</div>
-		      <div class="invalid-feedback">Please fill out this field.</div>
+		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
 		<div class="form-label-group" id="no-pad-b">
-		      <input type="tel" id="inputphone" name="phone_number" class="form-control" placeholder="Phone Number" required>
+		      <input type="tel" pattern="[0-9]+" title="Numbers Only" id="inputphone" name="phone_numberee" class="form-control" placeholder="Phone Number" required>
 		      <label for="inputphone">Phone Number</label>
 		      <div class="valid-feedback">Valid.</div>
-		      <div class="invalid-feedback">Please fill out this field.</div>
+		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
-		<textarea rows="3" name="message" class="form-control" placeholder="What would you like tell us ?"></textarea>
+		<textarea rows="3" maxlength="150" name="messageee" required class="form-control" placeholder="What would you like tell us ?"></textarea>
 		<br>
 		<button class="btn btn-lg btn-primary" id="submit-btn" type="submit">SUBMIT</button>
 	</form>
@@ -100,16 +112,16 @@
 function response($msg){
 	echo '<script type="text/javascript"> alert("'.$msg .'") </script>';
 	}
-if((isset($_POST['name']) && !empty($_POST['name']))
-&& (isset($_POST['email_add']) && !empty($_POST['email_add']))
-&& (isset($_POST['llevel']) && !empty($_POST['llevel']))
-&& (isset($_POST['phone_number']) && !empty($_POST['phone_number']))
-&& (isset($_POST['message']) && !empty($_POST['message']))){
-    $name = $_POST['name'];
-    $email_add = $_POST['email_add'];
-    $llevel = $_POST['llevel'];
-    $message = $_POST['message'];
-    $phone_number = $_POST['phone_number'];
+if((isset($_POST['nameee']) && !empty($_POST['nameee']))
+&& (isset($_POST['email_addee']) && !empty($_POST['email_addee']))
+&& (isset($_POST['llevelee']) && !empty($_POST['llevelee']))
+&& (isset($_POST['phone_numberee']) && !empty($_POST['phone_numberee']))
+&& (isset($_POST['messageee']) && !empty($_POST['messageee']))){
+    $nameee = $_POST['nameee'];
+    $email_addee = $_POST['email_addee'];
+    $llevelee = $_POST['llevelee'];
+    $messageee = $_POST['messageee'];
+    $phone_numberee = $_POST['phone_numberee'];
     $to = "nacossfunaabchapter@gmail.com";
     $headers = "From : " . $email_add;
     
@@ -120,8 +132,8 @@ if((isset($_POST['name']) && !empty($_POST['name']))
        response("Your message was unable to send please try again later, thanks."); 
     }
 	$conn = mysqli_connect('localhost','root','','nacoss');
-	mysqli_query($conn, "INSERT INTO `contact`(name, email_add, llevel, phone_number, message) VALUES ('$name',
-	'$email_add','$llevel','$phone_number','$message')") or die(mysqli_error($conn));
+	mysqli_query($conn, "INSERT INTO `contactoo`(nameee, email_addee, llevelee, phone_numberee, messageee) VALUES ('$nameee',
+	'$email_addee','$llevelee','$phone_numberee','$messageee')") or die(mysqli_error($conn));
 }
     ?> 
 	
@@ -134,7 +146,7 @@ if((isset($_POST['name']) && !empty($_POST['name']))
 				</h1>
 				<ul class="foot-pg-ul">
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="index.html">HOME</a></li> |
-					<li class="foot-pg-li "><a  class="foot-pg-a" href="pay.html">PAYMENTS</a></li> |
+					<li class="foot-pg-li "><a  class="foot-pg-a" href="" onclick="maintain()">PAYMENTS</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="contact.php">CONTACT</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="about.html">ABOUT</a></li> |
 					<li class="foot-pg-li "><a  class="foot-pg-a" href="photos.html">GALLERY</a></li>
@@ -164,9 +176,9 @@ if((isset($_POST['name']) && !empty($_POST['name']))
 					This site offers payment features, departmental updates, advertisement and past question downloads as sponsored by NACOSS FUNAAB and designed by PRISSOLUTIONS
 				</p>
 
-				<i class="fa fa-facebook foot-icons"></i>
+				<a href="https://web.facebook.com/nacoss_funaab-100562041636964/" target="blank"><i class="fa fa-facebook foot-icons"></i></a>
 				<i class="fa fa-twitter foot-icons"></i>
-				<i class="fa fa-instagram foot-icons"></i>
+				<a href="https://www.instagram.com/nacoss_funaab/" target="blank"><i class="fa fa-instagram foot-icons"></i></a>
 			</div>
 	</footer>
 
@@ -179,7 +191,8 @@ if((isset($_POST['name']) && !empty($_POST['name']))
     <script src="js/holder.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/validate.js">
+    <script src="js/validate.js"></script>
+    <script src="js/maintain.js"></script>
 
 </body>
 </html>
