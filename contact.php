@@ -17,7 +17,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-		 <a class="navbar-brand" href="#"><img class="nav-logo" src="images/nacoss-logo.jpg"></a>
+		 <a class="navbar-brand" href="index.html"><img class="nav-logo" src="images/nacoss-logo.jpg"></a>
 		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
 		 	<span class="navbar-toggler-icon"></span>
 		 </button>
@@ -39,7 +39,6 @@
 		     	<li class="nav-item">
 		          	<a class="nav-link" href="about.html"><i class="fa fa-users"></i> About Us</a>
 		    		</li>
-				</li>
 		     	<li class="nav-item">
 		          	<a class="nav-link" href="photos.html"><i class="fa fa-photo"></i>Photo Speaks</a>
 		    		</li>
