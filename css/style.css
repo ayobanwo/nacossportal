@@ -10,7 +10,7 @@ body{
 *****************************/
 #navbar{
 	padding: 10px 40px;
-	background-color: #332b4e;
+	background-color: #27175f;
 	position: sticky !important;
 	top: 0;
 	z-index: 100 !important;
@@ -44,7 +44,7 @@ header{
 }
 .welcome-slide{
 	color: #ffffff;
-	background-image: url("../images/funaab.jpeg");
+	background-image: url("../images/funaabgate.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -182,7 +182,7 @@ header{
 }
 footer{
 	padding: 30px 40px;
-	background-color: #332b4e;
+	background-color: #27175f;
 	color: white;
 	font-size: 95%;
 }
@@ -464,9 +464,9 @@ form{
 	.nacoss-exco-h1{
 		letter-spacing: 5px;
 	}
-	.welcome-slide{
+/*	.welcome-slide{
 		background-image: url("../images/funaabmobile2.jpeg");
-	}	
+	}*/	
 	.fresher-slide{
 		background-image: url("../images/welcome1-mobile.jpg");
 	}	

@@ -1,12 +1,7 @@
-let alertBtn = 
-document.querySelectorAll('.slide-info');
-
-for (var i = 0; i < alertBtn.length; i++ ){
-	alertBtn[i].addEventListener("click", fresherAlert);
-
-};
-
-function fresherAlert() {
+function infoAlert() {
 	alert("More information about this event will be available soon");
 };
 
+function maintainAlert(){
+    alert("Not available at the moment");
+}
