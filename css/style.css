@@ -55,7 +55,7 @@ header{
 }
 .fresher-slide{
 	color: #ffffff;
-	background-image: url("../images/executives.jpg");
+	background-image: url("../images/welcome1.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -468,7 +468,7 @@ form{
 		background-image: url("../images/funaabmobile2.jpeg");
 	}	
 	.fresher-slide{
-		background-image: url("../images/executives-mobile.jpg");
+		background-image: url("../images/welcomemobile.jpg");
 	}	
 	.update-slide{
 		background-image: url("../images/welcome-mobile.jpg");
