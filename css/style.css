@@ -465,13 +465,13 @@ form{
 		letter-spacing: 5px;
 	}
 	.welcome-slide{
-		background-image: url("../images/welcome-mobile.jpg");
+		background-image: url("../images/funaabmobile.jpeg");
 	}	
 	.fresher-slide{
-		background-image: url("../images/fresher-mobile.jpg");
+		background-image: url("../images/executivesmobile.jpg");
 	}	
 	.update-slide{
-		background-image: url("../images/update-mobile.jpg");
+		background-image: url("../images/welcome-mobile.jpg");
 	}	
 	.eapps-instagram-feed-posts-view{
 		justify-content: initial !important;
