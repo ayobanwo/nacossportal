@@ -44,7 +44,7 @@ header{
 }
 .welcome-slide{
 	color: #ffffff;
-	background-image: url("../images/funaab.jpg");
+	background-image: url("../images/executives.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -55,7 +55,7 @@ header{
 }
 .fresher-slide{
 	color: #ffffff;
-	background-image: url("../images/executives.jpg");
+	background-image: url("../images/funaab.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -66,7 +66,7 @@ header{
 }	
 .updates-slide{
 	color: #ffffff;
-	background-image: url("../images/update.jpg");
+	background-image: url("../images/fresher.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
