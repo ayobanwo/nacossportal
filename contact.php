@@ -120,11 +120,12 @@ if((isset($_POST['name']) && !empty($_POST['name']))
     $email_addee = $_POST['email_add'];
     $llevelee = $_POST['llevel'];
     $messageee = $_POST['message'];
+    $messageee .= $_POST['llevel'];
     $phone_numberee = $_POST['phone_number'];
     $to = "nacossfunaabchapter@gmail.com";
-    $headers = "From : " . $email_addee;
+    $headers = "From : " . $email_addee."\r\n";
     
-    if( mail($to, $llevel, $message, $headers)){
+    if( mail($to, $nameee, $messageee, $headers)){
        response("Message Sent successfully, we will get back to you soon.");
 	  $conn = new mysqli('localhost','root','','ncs');
 	$query = $conn->prepare( "INSERT INTO contactoo(nameee, email_addee, llevelee, phone_numberee, messageee) VALUES (?,?,?,?,?)") or die("Unable to Connect");
