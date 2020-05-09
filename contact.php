@@ -69,34 +69,34 @@
 
 	<form method="POST" action="contact.php" class="needs-validation wow animated slideInUp container"   data-wow-delay="0.5s" novalidate>
 		<div class="form-label-group">
-		      <input type="text" pattern="[a-z A-Z -]+" title="Letters Only" id="inputname" name="nameee" class="form-control" placeholder="Full Name" required >
+		      <input type="text" pattern="[a-z A-Z -]+" title="Letters Only" id="inputname" name="name" class="form-control" placeholder="Full Name" required >
 		      <label for="inputname">Full Name</label>
 		      <div class="valid-feedback">Valid.</div>
 		           <div class="invalid-feedback">Please fill out this field correctly.</div>
 		 </div>
 
 		<div class="form-label-group">
-		      <input type="text" pattern="[0-9]+" title="Numbers Only" id="inputmatric" name="llevelee" class="form-control" placeholder="Level" required>
+		      <input type="text" pattern="[0-9]+" title="Numbers Only" id="inputmatric" name="llevel" class="form-control" placeholder="Level" required>
 		      <label for="inputmatric">Level</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
 		<div class="form-label-group">
-		      <input type="email" id="inputemail" name="email_addee" class="form-control" placeholder="Email Address" required>
+		      <input type="email" id="inputemail" name="email_add" class="form-control" placeholder="Email Address" required>
 		      <label for="inputemail">Email Address</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
 		<div class="form-label-group" id="no-pad-b">
-		      <input type="tel" pattern="[0-9]+" title="Numbers Only" id="inputphone" name="phone_numberee" class="form-control" placeholder="Phone Number" required>
+		      <input type="tel" pattern="[0-9]+" title="Numbers Only" id="inputphone" name="phone_number" class="form-control" placeholder="Phone Number" required>
 		      <label for="inputphone">Phone Number</label>
 		      <div class="valid-feedback">Valid.</div>
 		      <div class="invalid-feedback">Please fill out this field correctly.</div>
 		</div>
 
-		<textarea rows="3" maxlength="150" name="messageee" required class="form-control" placeholder="What would you like tell us ?"></textarea>
+		<textarea rows="3" maxlength="150" name="message" required class="form-control" placeholder="What would you like tell us ?"></textarea>
 		<br>
 		<button class="btn btn-lg btn-primary" id="submit-btn" type="submit">SUBMIT</button>
 	</form>
@@ -111,28 +111,32 @@
 function response($msg){
 	echo '<script type="text/javascript"> alert("'.$msg .'") </script>';
 	}
-if((isset($_POST['nameee']) && !empty($_POST['nameee']))
-&& (isset($_POST['email_addee']) && !empty($_POST['email_addee']))
-&& (isset($_POST['llevelee']) && !empty($_POST['llevelee']))
-&& (isset($_POST['phone_numberee']) && !empty($_POST['phone_numberee']))
-&& (isset($_POST['messageee']) && !empty($_POST['messageee']))){
-    $nameee = $_POST['nameee'];
-    $email_addee = $_POST['email_addee'];
-    $llevelee = $_POST['llevelee'];
-    $messageee = $_POST['messageee'];
-    $phone_numberee = $_POST['phone_numberee'];
+if((isset($_POST['name']) && !empty($_POST['name']))
+&& (isset($_POST['email_add']) && !empty($_POST['email_add']))
+&& (isset($_POST['llevel']) && !empty($_POST['llevel']))
+&& (isset($_POST['phone_number']) && !empty($_POST['phone_number']))
+&& (isset($_POST['message']) && !empty($_POST['message']))){
+    $nameee = $_POST['name'];
+    $email_addee = $_POST['email_add'];
+    $llevelee = $_POST['llevel'];
+    $messageee = $_POST['message'];
+    $phone_numberee = $_POST['phone_number'];
     $to = "nacossfunaabchapter@gmail.com";
-    $headers = "From : " . $email_add;
+    $headers = "From : " . $email_addee;
     
     if( mail($to, $llevel, $message, $headers)){
        response("Message Sent successfully, we will get back to you soon.");
+	  $conn = new mysqli('localhost','root','','ncs');
+	$query = $conn->prepare( "INSERT INTO contactoo(nameee, email_addee, llevelee, phone_numberee, messageee) VALUES (?,?,?,?,?)") or die("Unable to Connect");
+	$query->bind_param("ssiis",$nameee,$email_addee,$llevelee,$phone_numberee,$messageee);
+	$query->execute();
+	$query->close();
+	$conn->close();
      }
      else{
        response("Your message was unable to send please try again later, thanks."); 
     }
-	$conn = mysqli_connect('localhost','root','','nacoss');
-	mysqli_query($conn, "INSERT INTO `contactoo`(nameee, email_addee, llevelee, phone_numberee, messageee) VALUES ('$nameee',
-	'$email_addee','$llevelee','$phone_numberee','$messageee')") or die(mysqli_error($conn));
+	
 }
     ?> 
 	
